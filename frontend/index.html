@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POS Toko Material & Bangunan - Strict White Minimalist</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            canvas: "#FFFFFF",
+            surface: "#F8FAFC",
+            charcoal: "#0F172A",
+            muted: "#64748B",
+            hairline: "#E2E8F0",
+          },
+          fontFamily: {
+            sans: ['Inter', 'Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          borderRadius: {
+            DEFAULT: "6px",
+            md: "6px",
+            sm: "4px",
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Design System Stylesheet -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="h-full w-full overflow-hidden bg-[#F8FAFC] text-[#0F172A] tabular-nums">
+  <!-- Root Container for Application Shell -->
+  <div id="app-root" class="h-full w-full"></div>
+
+  <!-- Application Main Script -->
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+line-length = 120
+
+[lint]
+select = ["E", "F", "W", "UP", "B", "SIM"]
+ignore = [
+    "E501",   # Line too long (handled by formatter)
+    "B008",   # Do not perform function call `Depends` in argument defaults (standard FastAPI pattern)
+    "BLE001", # Do not catch blind exception `Exception` (standard FastAPI endpoint rollback handler)
+]
+
+[lint.flake8-bugbear]
+extend-immutable-calls = ["fastapi.Depends", "fastapi.Query", "fastapi.Path", "fastapi.Body"]
+
