@@ -97,6 +97,8 @@ python seed.py
 ```
 
 ### 4. Menjalankan Aplikasi
+- **Cara Praktis (Sekali Klik di Windows):** Cukup klik dua kali file `start_server.bat` di folder proyek. Browser akan terbuka otomatis.
+- **Cara Manual via Terminal:**
 ```bash
 python run_app.py
 ```
